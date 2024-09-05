@@ -1,9 +1,23 @@
 #include <iostream>
+#include "Pila/Pila.h"
+
 using namespace std;
 
-int main() {
+void eliminar_rep(Pila<int>& p, int val) {
+    Pila<int>* copia = new Pila<int>(p);
 
-    cout << "Ejercicio N° 3" << endl;
+    while (!copia->esVacia()) {
 
-    return 0;
+    }
+
+    delete copia;
+}
+
+int main(int argc, char **argv) {
+    if (argc <= 2) {
+        cout << "Uso: " << argv[0] << " VALOR NUMEROS..." << endl;
+        return 1;
+    }
+
+    
 }
